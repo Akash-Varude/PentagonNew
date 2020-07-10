@@ -1,0 +1,20 @@
+﻿var i = 0;
+function move(p) {
+    if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= p) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elem.style.width = p + "%";
+            }
+        }
+    }
+}
+
+move(80);z

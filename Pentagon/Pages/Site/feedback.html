@@ -1,0 +1,103 @@
+﻿<script src="../../Scripts/Custom/require.js"></script>
+<script src="../../Scripts/Custom/feedback.js"></script>
+<div class="container-fluid feedback-outer-container">
+    <p class="feedback-title">Feedback</p>
+    <div class="feedback-form-div">
+        <div class="inner-form-container">
+            <div class=" form-row"><input type="text" id="names" class="contact-form-text" placeholder="Your Name here" name="name" /></div>
+            <div class="form-row"><input type="email" id="email" class="contact-form-text" placeholder="Email" name="email" /></div>
+            <div class="form-row"><input type="text" id="organisation" class="contact-form-text" placeholder="organisation" name="organisation" /></div>
+
+            <div class="form-row"><textarea class="contact-form-text" id="body" placeholder="your message here" name="message"></textarea></div>
+            <div class="form-row buttons">
+                <input type="submit" onclick="displayComent()" id="addfeedback" name="btn-send" class="send-btn contact-form-btn" value="send" />
+            </div>
+        </div>
+    </div>
+
+
+    <section id="feedbacks">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--Feedback title-->
+                    <!--<h2 class="text-center feedback-title text-dark "><strong>Feedbacks</strong></h2>-->
+                    <!--Carousel Begins-->
+                    <div class="carousel slide" id="feedback-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#feedback-carousel" data-slide-to="0"></li>
+                            <li data-target="#feedback-carousel" class="active" data-slide-to="1"></li>
+                            <li data-target="#feedback-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <!--Slide 1-->
+                            <div class="carousel-item text-center">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="http://2.bp.blogspot.com/-ThNZQ4zKi1M/VdI42cKm71I/AAAAAAAAAKU/FcElN7UhDE0/s320/bill_gates.jpeg"
+                                         class="d-block w-100 rounded-circle" />
+                                </div>
+                                <h5 class="py-1 my-2"><strong class="text-warning text-uppercase">Bill Gates</strong></h5>
+                                <h5 class="text-dark m-1">Google CEO</h5>
+                                <p class="pt-3 text-white feedback-text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                    aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <!--Slide 2 (Active by default)-->
+                            <div class="carousel-item text-center active">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzE2NDgzNTIwMDEx/larry-page-12103347-1-402.jpg"
+                                         class="d-block w-100 rounded-circle" />
+                                </div>
+                                <h5 class="py-1 my-2"><strong class="text-warning text-uppercase">Larry Page</strong></h5>
+                                <h5 class="text-dark m-1">Google Co-founder</h5>
+                                <p class="pt-3 text-white feedback-text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                    aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <!--Slide 3-->
+                            <div class="carousel-item text-center">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg"
+                                         class="d-block w-100 rounded-circle" />
+                                </div>
+                                <h5 class="py-1 my-2"><strong class="text-warning text-uppercase">Elon Musk</strong></h5>
+                                <h5 class="text-dark m-1">Testla SpaceX</h5>
+                                <p class="pt-3 text-white feedback-text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                    aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Carousel Controls-->
+                        <a href="#feedback-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a href="#feedback-carousel" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!--Carousel Ends-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="feedback-dynamic-text" id="FeedbackDynamicText" style="color:white;">
+
+    </div>
+</div>
+
+
+
+
+
